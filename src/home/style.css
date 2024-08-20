@@ -1,0 +1,19 @@
+.bloco-pedidos{
+background-attachment: fixed;
+flex-direction: row;
+}
+
+button{
+    background-color: #fff2f2;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 35px;
+    margin: 15px;
+    transition: background-color 0.2s;
+}
+
+button:hover{
+    background-color: #d2eaff;
+    color:#001eff;
+}

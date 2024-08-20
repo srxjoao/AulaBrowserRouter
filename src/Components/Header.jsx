@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
-
+import './style.css';
 export default function Header(){
     return(
         <>
+        <header>
+            <h1>Jottape's Tech Hub</h1>
         <nav>
             <ul>
                 <Link to="/">
@@ -16,6 +18,7 @@ export default function Header(){
                 </Link>
             </ul>
         </nav>
+        </header>
         </>
     )
 }
