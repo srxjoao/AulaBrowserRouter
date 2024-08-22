@@ -1,8 +1,15 @@
-export default function listaProdutos({produto},{produto.item},{produto.preco}){
+export default function ListaProdutos({ listaProdutos }){
     return(
-        <div {produto}>
-        <p>{produto.titulo}</p>
-        <p>{produto.preco} </p>
-        </div>
+       <div>
+        {
+          listaProdutos.map((produto) =>
+            <div key={produto.id}>
+          <p>{produto.item}</p>
+          <p>{produto.preco} </p>
+              <button onClick={() => adicionarItemPedidos(produto)}>Selecionar</button>
+            </div>
+          )
+          }   
+       </div>
     );
 }

@@ -1,5 +1,6 @@
+import listaProdutos from "../Components/ListarProdutos";
 export default function Oferta(){
     return(
-        <p>jajo</p>
+        <Produtos produto={"Teclado  gamer"}/> 
     );
 }

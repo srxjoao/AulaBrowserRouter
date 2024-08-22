@@ -3,12 +3,18 @@ import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './style.css'
 import Header from '../Components/Header'
+import Footer from "../Components/Footer";
+import ListaProdutos from "../Components/ListarProdutos";
 export default function Home(){
-  const [listaProdutos, setProdutos] = useState([
+  const [listaProdutos] = useState([
     {
       id: 1,
       item: "HambúAlto-falante Bluetooth Divoom Ditoo Pixel Art",
-      preco: "R$ 550,50"
+      preco: "R$ 550,50",
+      maisvendido:"false",
+      temled:"false",
+      cor:"Azul Ciano",
+      Marca:"Ditoo Pixel Art"
   },
   {
       id: 2,
@@ -61,15 +67,9 @@ dynamicHeight>
     <img src="./public/Banner 2.jpg" alt="" />
   </div>
         </Carousel>
-         {
-          listaProdutos.map((produto) =>
-            <div key={produto.id}>
-          <p>{produto.item}</p>
-          <p>{produto.preco} </p>
-              <button onClick={() => adicionarItemPedidos(produto)}>Selecionar</button>
-            </div>
-          )
-          }          
+        <ListaProdutos listaProdutos={listaProdutos}/>
+            <Footer/>       
     </div>
+  
       );
 }

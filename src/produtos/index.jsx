@@ -1,7 +1,8 @@
+import listaProdutos from '../Components/ListarProdutos';
 export default function Produtos(){
     return(
         <div>
-            <p>Produtões</p>
-            </div>
+            <listaProdutos produto={"produtaão"}/>
+        </div>
     )
 }
