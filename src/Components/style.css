@@ -61,3 +61,14 @@ color: #fff;
 font-family: "Poppins", sans-serif;
 }
 
+.container-produto{
+    background-color: #0084BC;
+    left: 15px;
+    width: 600px;
+    height: 520px;
+    border-radius: 20px;
+    margin: 20px;
+    flex: 1 1 calc(33.333% - 40px); /* 3 itens por linha, considerando margem e espaçamento */
+    
+}
+
