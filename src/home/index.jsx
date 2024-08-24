@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import './style.css'
+import '../Components/style.css'
 import Header from '../Components/Header'
 import Footer from "../Components/Footer";
 import ListaProdutos from "../Components/ListarProdutos";
@@ -20,7 +20,7 @@ export default function Home(){
   {
       id: 2,
       item: "Teclado Com Fio Oex Tc401 Pop In Apoio De Punho",
-      imagem:"https://m.media-amazon.com/images/I/619CQSczlyL._AC_UL480_FMwebp_QL65_.jpg",
+      imagem:"./public/teclado.png",
       preco: "R$ 99,50",
       maisvendido:true,
       temled:false,
@@ -37,13 +37,40 @@ export default function Home(){
       cor:["Branco","Preto","Rosa","Roxo"],
       marca:"Logitech"
   },
+  {
+    id: 4,
+    item: "Computador Gamer Completo Intel",
+    imagem:"https://m.media-amazon.com/images/I/61k+PkiT62L._AC_SX569_.jpg",
+    maisvendido:true,
+    temled:true,
+    preco: "R$ 1.700,85",
+    cor:["Apenas preto com led"],
+    marca:"Intel"
+},
+{
+  id: 5,
+  item: "COMBO GAMER ROSA (TECLADO+MOUSE+FONE)",
+  imagem:"https://m.media-amazon.com/images/I/71B6xcBPBwL._AC_SX569_.jpg",
+  maisvendido:true,
+  temled:true,
+  preco: "R$ 190,00",
+  cor:["Rosa"],
+  marca:"EVOLUT"
+},
+{
+  id: 6,
+  item: "Gabinete Gamer Cruiser ",
+  imagem:"https://m.media-amazon.com/images/I/81wNeVGKRkL._AC_SX569_.jpg",
+  maisvendido:true,
+  temled:true,
+  preco: "R$ 400,98",
+  cor:["Branco","Preto"],
+  marca:"Fortrek"
+},
   ]);
-
       return(
-      
 <div className="bloco-produtos">
 <Header/>
-
 <Carousel
 infiniteLoop
 useKeyboardArrows
@@ -60,7 +87,7 @@ dynamicHeight>
   </div>
         </Carousel>
         <ListaProdutos listaProdutos={listaProdutos}/>
-            <Footer/>       
+        <Footer/>
     </div>
   
       );

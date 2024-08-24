@@ -8,7 +8,7 @@ export default function ListaProdutos({ listaProdutos }){
           <p className="produto-title">{produto.item}</p>
           <img className="produto-image" src={produto.imagem}/>
           <p className="produto-preco" >{produto.preco} </p>
-              <button className="button-add" onClick={() => adicionarItemPedidos(produto)}>Comprar Item</button>
+              <button className="button-add">Comprar Item</button>
             </div>
           )
           }   
