@@ -83,7 +83,10 @@ dynamicHeight>
     <img src="./public/banner1.jpg" alt="Banner" />
   </div>
   <div>
-    <img src="./public/Banner 2.jpg" alt="" />
+    <img src="./public/Banner 2.jpg" alt="Banner" />
+  </div>
+  <div>
+    <img src="./public/Banner 3.jpg" alt="Banner" />
   </div>
         </Carousel>
         <ListaProdutos listaProdutos={listaProdutos}/>

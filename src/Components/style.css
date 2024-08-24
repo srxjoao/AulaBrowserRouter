@@ -64,6 +64,16 @@ nav li:hover{
     text-decoration: none;    
 }
 
+.title-cor {
+    font-size: 8px;
+    margin: 5px;
+    display: inline-block; /* Usar Flexbox para centralização */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center;
+    position: relative;
+}
+
 .container-produto{
     background-color: #0084BC;
     width: 450px;
