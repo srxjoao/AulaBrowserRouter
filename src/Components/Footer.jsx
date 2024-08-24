@@ -1,9 +1,13 @@
-import { Link } from "react-router-dom";
-
-export default function Footer(){
+export default function Footer ({desenvolvedor}){
     return(
-        <footer>
-        <p>&copy; 2024 Jottape's Tech Hub</p>
-    </footer>
-    );
+        <footer className="rodape">
+            <ul>
+                <center>
+                <a className="dev"  href="https://www.linkedin.com/in/srxjoao1/" >
+                    {desenvolvedor}
+                </a>
+                </center>
+            </ul>
+        </footer>
+    )
 }

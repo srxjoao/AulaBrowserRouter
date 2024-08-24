@@ -47,7 +47,7 @@ export default function Produtos(){
     },
     {
       id: 5,
-      item: "COMBO GAMER ROSA (TECLADO+MOUSE+FONE)",
+      item: "Combo Gamer Rosa",
       imagem:"https://m.media-amazon.com/images/I/71B6xcBPBwL._AC_SX569_.jpg",
       maisvendido:true,
       temled:true,
@@ -164,15 +164,18 @@ export default function Produtos(){
             temled: true,
             cor: ["Preto", "RGB"],
             marca: "ASUS"
-          }
+          },
+
       ]);
     return(
-        <div>
+
+        <main>
             <Header/>
             <center>
             <h1 className="title-produtos" >Nossos Produtos</h1>
             </center>
                     <ListaProdutos listaProdutos={listaProdutos}/>
-        </div>
+                    <Footer desenvolvedor={"Desenvolvido por João Pedro Oliveira💙"}/>
+        </main>
     )
 }

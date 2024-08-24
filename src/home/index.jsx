@@ -49,7 +49,7 @@ export default function Home(){
 },
 {
   id: 5,
-  item: "COMBO GAMER ROSA (TECLADO+MOUSE+FONE)",
+  item: "Combo Gamer Rosa",
   imagem:"https://m.media-amazon.com/images/I/71B6xcBPBwL._AC_SX569_.jpg",
   maisvendido:true,
   temled:true,
@@ -87,7 +87,7 @@ dynamicHeight>
   </div>
         </Carousel>
         <ListaProdutos listaProdutos={listaProdutos}/>
-        <Footer/>
+        <Footer desenvolvedor={"Desenvolvido por João Pedro Oliveira💙"}/>
     </div>
   
       );

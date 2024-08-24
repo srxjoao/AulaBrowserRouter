@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #003C56;
     color: white;
@@ -45,12 +46,22 @@ nav li:hover{
     color: aqua;
 }
 
-footer {
+.rodape{
+    height: 80px;
+    margin-left: 0;
     background-color: #003C56;
     color: white;
-    text-shadow: 2px 2px 4px #6547db;
-    text-align: center;
-    padding: 10px;
+    font-size: 15px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.dev{
+    color: #fff;
+    text-decoration: none;    
 }
 
 .container-produto{
@@ -60,7 +71,7 @@ footer {
     border-radius: 20px;
     margin: 20px;    
     max-width: 900px;
-    float:left;
+    float: left;
 }
 
 .button-add{
@@ -88,19 +99,20 @@ footer {
     height: auto;
     display: block; 
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-top: 25px;
     border-radius: 8px;
   }
 
 .produto-title{
     text-align: center;
-    margin: 25px 20px 25px 20px;
-    margin: 0 auto;
+    font-size: 13px;
+    margin-top: 10px;
     display: block;
-
 }
 
 .produto-preco{
     text-align: center;
+    font-size: 13px;
     text-shadow: 2px 2px 4px #000000;
 }
+
