@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import ListaProdutos from "../Components/ListarProdutos";
@@ -111,7 +112,8 @@ marca: "Sony"
          <center>
          <h1 className="title-oferta" >Confira nossas ofertas</h1>
          </center>
-         <ListaProdutos listaProdutos={listaProdutos}/>
+         <tr className="cor"></tr>
+         <ListaProdutos listaProdutos={listaProdutos} />
          <Footer desenvolvedor={"Desenvolvido por João Pedro Oliveira💙"}/>
        </main>
     );

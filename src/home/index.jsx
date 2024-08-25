@@ -60,7 +60,7 @@ export default function Home(){
 {
   id: 6,
   item: "Gabinete Gamer Cruiser ",
-  imagem:"https://m.media-amazon.com/images/I/81wNeVGKRkL._AC_SX569_.jpg",
+  imagem:"https://img.terabyteshop.com.br/produto/g/gabinete-gamer-xpg-cruiser-aluminum-frame-mid-tower-vidro-temperado-black-sem-fonte-com-3-fans-argb-white-cruiserst-whcww_174034.png",
   maisvendido:true,
   temled:true,
   preco: "R$ 400,98",

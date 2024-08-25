@@ -14,6 +14,8 @@ export default function ListaProdutos({ listaProdutos }){
           <div className="container-produto" key={produto.id}>
           <img className="produto-image" src={produto.imagem} alt={"produto.item"}/>
           <p className="produto-title">{produto.item}</p>
+          {produto.cor.map((cor) =>
+            <p className="title-cor" key={cor}>{cor}</p>)}<br></br>
           <p className="produto-preco" >{produto.preco} </p>
             <button onClick={notify} className="button-add">Comprar Item</button>
             <ToastContainer position="bottom-center"/>
