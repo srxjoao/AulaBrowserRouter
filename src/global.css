@@ -12,16 +12,18 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
+    text-decoration: none;
 }
 
 nav ul {
-    list-style: none;
+    text-decoration: none;
     padding: 0;
 }
 
 nav li {
     display: inline;
     margin-right: 20px;
+    text-decoration: none;
 }
 
 nav li {
@@ -65,7 +67,7 @@ nav li:hover{
 }
 
 .title-cor {
-    font-size: 8px;
+    font-size: 13px;
     margin: 5px;
     display: inline-block; /* Usar Flexbox para centralização */
     justify-content: center; /* Centraliza horizontalmente */
@@ -75,32 +77,25 @@ nav li:hover{
 }
 
 .container-produto {
-    background-color: #0084BC;
+    background-color: #3A7CA5;
     width: 450px;
     height: 450px;
     border-radius: 20px;
     margin: 20px;
     max-width: 900px;
     float: left;
-    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+    box-shadow: 2px 4px 2px 4px #B3DDF2;
+    transition: background-color 0.4s ease;
 }
 
-/* Animação de vibração */
-@keyframes vibrate {
-    0%, 100% { transform: translateX(0); }
-    20% { transform: translateX(-3px); }
-    40% { transform: translateX(3px); }
-    60% { transform: translateX(-3px); }
-    80% { transform: translateX(3px); }
-}
 
 .container-produto:hover {
-    background-color: #005F8C; /* Muda a cor de fundo ao passar o mouse */
-    animation: vibrate 0.3s ease-in-out; /* Aplica a animação de vibração */
+    background-color: #005F8C; 
+    animation: vibrate 0.3s ease-in-out; 
 }
 
 .button-add{
-    background-color: #003C56;
+    background-color: #008897;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -113,8 +108,8 @@ nav li:hover{
 }
 
 .button-add:hover{
-    background-color: #d2eaff;
-    color:#001eff;
+    background-color: #00a39e;
+    color:#000000;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -130,7 +125,7 @@ nav li:hover{
 
 .produto-title{
     text-align: center;
-    font-size: 13px;
+    font-size: 16px;
     margin-top: 10px;
     display: block;
 }
@@ -141,3 +136,7 @@ nav li:hover{
     text-shadow: 2px 2px 4px #000000;
 }
 
+.text-desconto{
+font-size: 90%;
+text-shadow: 3px 2px 3px 2px #001eff;
+}

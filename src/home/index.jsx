@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import '../Components/style.css'
+import '../global.css';
 import Header from '../Components/Header'
 import Footer from "../Components/Footer";
 import ListaProdutos from "../Components/ListarProdutos";

@@ -1,8 +1,8 @@
 import { useState } from "react";
+import '../global.css';
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import ListaProdutos from "../Components/ListarProdutos";
-import '../Components/style.css'
 export default function Oferta(){
   const [listaProdutos] = useState([
     {
@@ -111,8 +111,8 @@ marca: "Sony"
          <Header/>
          <center>
          <h1 className="title-oferta" >Confira nossas ofertas</h1>
+         <p className="text-desconto">Confira abaixo alguns produtos em promoção,use o cupom:MARCELINOMEDA10 e ganhe 10% de desconto</p>
          </center>
-         <tr className="cor"></tr>
          <ListaProdutos listaProdutos={listaProdutos} />
          <Footer desenvolvedor={"Desenvolvido por João Pedro Oliveira💙"}/>
        </main>

@@ -4,7 +4,7 @@
 
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './style.css'
+import '../global.css';
 export default function ListaProdutos({ listaProdutos }){
   const notify = () => toast("Item Adicionado ao Carrinho!")
     return(
@@ -12,10 +12,12 @@ export default function ListaProdutos({ listaProdutos }){
         {
           listaProdutos.map((produto) =>
           <div className="container-produto" key={produto.id}>
-          <img className="produto-image" src={produto.imagem} alt={"produto.item"}/>
+          <img className="produto-image" src={produto.imagem}/>
           <p className="produto-title">{produto.item}</p>
+          <center>
           {produto.cor.map((cor) =>
             <p className="title-cor" key={cor}>{cor}</p>)}<br></br>
+            </center>
           <p className="produto-preco" >{produto.preco} </p>
             <button onClick={notify} className="button-add">Comprar Item</button>
             <ToastContainer position="bottom-center"/>
