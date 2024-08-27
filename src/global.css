@@ -26,6 +26,10 @@ nav li {
     text-decoration: none;
 }
 
+link{
+    text-decoration:none;
+}
+
 nav li {
     text-decoration: none;
     font-size: 20px;
@@ -155,4 +159,26 @@ text-shadow: 3px 2px 3px 2px #001eff;
     color: #ffffff;    
     font-size: 12px;
 }
-  
+
+/*Deixando Responsivo*/
+@media screen and (max-width: 480px){
+    .container-produto{
+        width: 85%;
+        align-items: center;
+    }
+    .produto-image{
+        width: 70%;
+    }
+    .produto-title{
+        font-size: 85%;
+    }
+    .button-add{
+        width: 85%;
+    }
+    .title-oferta{
+        font-size:35px;
+    }
+    .text-desconto{
+        font-size: 15px;
+    }
+}

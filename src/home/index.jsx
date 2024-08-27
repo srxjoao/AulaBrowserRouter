@@ -89,6 +89,9 @@ dynamicHeight>
     <img src="./public/Banner 3.jpg" alt="Banner" />
   </div>
         </Carousel>
+        <center>
+        <h1 className="title-oferta">Confira alguns dos nossos produtos</h1>
+        </center>
         <ListaProdutos listaProdutos={listaProdutos}/>
         <Footer desenvolvedor={"Desenvolvido por João Pedro Oliveira💙"}/>
     </div>

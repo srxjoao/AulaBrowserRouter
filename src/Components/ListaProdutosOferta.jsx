@@ -19,9 +19,10 @@ export default function ListarProdutosOferta({ produtosoferta }) {
             ))}
           </center>
           <center>
-          <p className="preco-promo"><span class="promocao">{produto.precoOriginal}</span><span> por </span> <span class="ta-barato">{produto.precoDesconto}</span></p>
+          <p className="preco-promo"><span class="promocao">{produto.precoOriginal}
+            </span><span> por </span> <span class="ta-barato">{produto.precoDesconto}</span></p>
           </center>
-          <button onClick={notify} className="button-add">Comprar Item</button>
+          <button className="button-add" onClick={notify} >Comprar Item</button>
           <ToastContainer position="bottom-center" />
         </div>
       ))}
