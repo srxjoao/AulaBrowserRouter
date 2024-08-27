@@ -84,7 +84,7 @@ nav li:hover{
     margin: 20px;
     max-width: 900px;
     float: left;
-    box-shadow: 2px 4px 2px 4px #B3DDF2;
+    box-shadow: 2px 4px 2px 4px #008897;
     transition: background-color 0.4s ease;
 }
 
@@ -140,3 +140,19 @@ nav li:hover{
 font-size: 90%;
 text-shadow: 3px 2px 3px 2px #001eff;
 }
+  
+  /* Estilo para o preço original */
+  .promocao {
+    text-decoration: line-through; /*Esta propriedade peguei da internet pois não a conhecia */
+    font-size: 13px;
+    color: #ffffff;
+  }
+  
+  /* Estilo para o preço com desconto */
+  .ta-barato {
+    font-weight: bold; 
+    background-color: #002c47;
+    color: #ffffff;    
+    font-size: 12px;
+}
+  
